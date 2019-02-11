@@ -12,6 +12,7 @@ public class TachografTest {
     @Before
     public void before() {
         tachograf = new TachografImpl();
+        tachograf.addElement(0,1,2);
     }
 
     @Test
