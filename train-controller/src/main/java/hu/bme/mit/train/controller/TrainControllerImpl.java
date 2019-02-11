@@ -8,6 +8,10 @@ public class TrainControllerImpl implements TrainController {
 	private int referenceSpeed = 0;
 	private int speedLimit = 0;
 
+	/**
+	 * The method used for calculating reference speed
+	 * */
+
 	@Override
 	public void followSpeed() {
 		if (referenceSpeed < 0) {
@@ -23,6 +27,10 @@ public class TrainControllerImpl implements TrainController {
 		enforceSpeedLimit();
 	}
 
+	/*
+	* The method used for getting reference speed
+	* @return speed
+	* */
 	@Override
 	public int getReferenceSpeed() {
 		return referenceSpeed;
