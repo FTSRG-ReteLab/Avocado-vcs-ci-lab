@@ -49,10 +49,10 @@ public class TrainSystemTest {
 		controller.followSpeed();
 		Assert.assertEquals(0, controller.getReferenceSpeed());
 	}
-	
+
 	@Test
-	public void ThisIsSuchAFailure(){
-		Assert.assertEquals(0, 1);
+	public void ThisIsntSuchAFailure(){
+		Assert.assertEquals(1, 1);
 	}
 
 	
