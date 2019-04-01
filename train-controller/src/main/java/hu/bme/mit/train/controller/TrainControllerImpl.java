@@ -54,4 +54,15 @@ public class TrainControllerImpl implements TrainController {
 		this.step = joystickPosition;		
 	}
 
+	public void refreshReferenceSpeed() {
+		try {
+			while(true) {
+				followSpeed();
+				Thread.sleep(100);
+			}
+		} catch(Exception e){
+			System.out.println(e.toString());
+		}
+	}
+
 }
