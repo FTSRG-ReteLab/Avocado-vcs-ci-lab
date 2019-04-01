@@ -66,8 +66,8 @@ public class TrainControllerImpl implements TrainController {
 						followSpeed();
 					}
 				},
-				100,
-				100);
+				10,
+				10);
 	}
 
 }
