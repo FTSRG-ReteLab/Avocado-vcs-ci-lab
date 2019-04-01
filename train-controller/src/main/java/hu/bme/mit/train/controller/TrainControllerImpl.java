@@ -61,7 +61,7 @@ public class TrainControllerImpl implements TrainController {
 				Thread.sleep(100);
 			}
 		} catch(Exception e){
-			
+			System.out.println(e.toString());
 		}
 	}
 
